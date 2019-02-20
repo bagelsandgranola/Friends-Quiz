@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="keywords" content="Friends,Quiz,Trivia,Ross,Rachel,Chandler,Monica,Joey,cast, TV">
+    <title>Friends Quiz: How well do you know the show?</title>
+    
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="grid.css" rel="stylesheet" type="text/css" />
+
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/hk-grotesk" type="text/css"/>
+
+
+  </head>
+  <body>
+
+    
+
+    <div class="intro-page col-12" id="intro-page">
+      <img class="hero-img" src="http://www.stickpng.com/assets/images/58937bdd8370b70e212f3def.png" alt="Picture of Friends cast">
+      <div class="intro-text">
+        <h1>Are you a true</h1>
+        <img class ="logo"  src="https://i.ibb.co/47RjP7t/Friends-logo.png" alt="Friends-logo">
+        <p class="description-text"> Answer 5 of our hardest Friends trivia questions to find out.</p>
+        <button type="button" id="getStarted" class="yellowButton">Get Started</button> 
+      </div>
+
+   
+    </div>
+
+    <!----Question page ----->
+    <div class="question-page" id="question-page">
+
+      <div class="question-header col-12">
+        <h4>Are you a true</h1>
+        <img class ="logo-small"  src="https://i.ibb.co/47RjP7t/Friends-logo.png" alt="Friends-logo">
+      </div>
+
+      <div class="row">
+      <div class="question col-4 left-div">
+      <div class ="question-text-container">
+        <p class="question-text">When Ross got a spray tan, what level of tan did he end up?.</p>
+      </div>
+      <div class =
+      "answers-container">
+        <form class="answers" id="answers">
+          <input type="radio" id="answer1" name="answer" value="Eight" class="selection" checked/><label for="answer1" class="btn"><span class="js-span">Eight</span></label><br>
+
+          <input type="radio" id="answer2" name="answer" value="Eleven"/><label for="answer2" class="btn"> <span>Eleven</span></label><br>
+
+          <input type="radio" id="answer3" name="answer" value="Fourteen"/><label for="answer3" class="btn"> <span> Fourteen</span></label><br>
+
+          <input type="radio" id="answer4" name="answer" value="Twelve"/><label for="answer4" class="btn"> <span>Twelve</span></label><br>
+
+          <div class = "form-submit col-12">
+          <button type="submit" id="submit" class="yellowButton">Submit</button>
+          </div>
+
+
+          </form>
+          </div>
+
+      </div>
+
+      <div class="image col-6 right-div">
+      <img class="gif" id="my-image" src="https://thumbs.gfycat.com/SameShortEyra-size_restricted.gif" alt="Gif of Ross showing his uneven spray tan. He's really tan on his front and white on his back.">
+      </div>
+      </div>
+
+    </div>
+
+<!----Response ----->
+      <div class="row">
+      <div class = "col-6 left-div response-section">
+      <div class = "response" id="response">
+         </div>
+      
+      <div class = "next-question-button yellowButton">
+
+  
+
+      <button type="submit" id="nextQuestion" class="yellowButton">Next Question</button>
+
+      </div>
+      </div>
+     </div>
+      
+
+<!----Results----->
+      <div class = "results" id="results">
+        <p> test </p>
+      </div>
+
+      <div class ="tryAgain">
+        <button type="submit" id="tryAgain"> Try again </button>
+      </div>
+
+      </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+    <script src="index.js"></script>
+  </body>
+</html>

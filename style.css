@@ -1,0 +1,222 @@
+*
+{
+  font-family: 'HankenGroteskRegular'; 
+  box-sizing: border-box;
+}
+p{
+  font-size:15px;
+}
+
+.question-text-container
+{
+  display:block;
+ // height: 100px;
+  width: 460px;
+}
+
+.yellowButton
+{
+  background-color: #FCBD00;
+  width: 170px;
+  height: 48px;
+  border-radius: 12px;
+  border-color: #FCBD00;
+  color: white;
+  font-weight: bold;
+}
+
+.yellowButton:hover{
+  background-color:rgb(255, 204, 49);
+  border-color: rgb(255, 204, 49);
+  cursor: pointer;
+}
+
+#nextQuestion-button-text
+{
+  buttontext: white;
+  color: white;
+  font-weight: bold;
+  //padding-left: 35px;
+  //padding-right: 35px;
+  //position: absolute;
+}
+
+.hero-img
+{
+  float: right;
+  width: 75%;
+  transform: scaleX(-1);
+ 
+}
+.logo
+{
+  width: 33%;
+  float: left;
+  display:block;
+}
+
+.logo-small
+{
+  width: 20%;
+  float: left;
+  display:block;
+}
+
+h1
+{
+  font-size: 15px;
+  font-style:bold;
+}
+
+body{
+  margin:0;
+  padding:0;
+}
+.intro-text
+{
+  position: absolute;
+  top: 16px;
+  left: 32px;
+}
+
+.description-text
+{
+  width: 33%;
+  padding-top:64px;
+}
+
+.hide
+{
+  display: none;
+}
+
+/* Questions Page Styling */
+.gif
+{
+  //float: right;
+  width: 400px;
+  padding-top: 50px;
+  padding-left: 50px;
+}
+ax
+.image
+{
+  display: inline-block;
+  float: right;
+}
+
+.question-text
+{
+  //padding-top:50px;
+}
+
+.logo-small
+{
+  width: 100px;
+  float: left;
+  display:block;
+}
+
+h4{
+  font-size: 10px;
+}
+
+.question{
+  display:block;
+  padding-left:8.7%;
+
+}
+
+.question-header{
+  margin-bottom:20px;
+}
+
+.question-text{
+  float:left;
+  width: 253px;
+}
+
+.answers-container
+{
+  display:block;
+  width: 466px;
+  height: 440px;
+}
+.question-header > img
+{
+  padding-left: 10px;
+}
+
+.question-header > h4
+{
+  padding-left: 10px;
+}
+
+/*
+.btn
+{
+  background-color:white;
+  border: 1px solid;
+  border-color:#00B5EF;
+  width:253px;
+  height:48px;
+}
+*/
+
+#answers label{
+ float:left;
+    width:253px;
+    height: 48px;
+    margin-bottom:20px;
+    background-color:white;
+    border-radius:12px;
+    border:1px solid #00B5EF;
+    overflow:hidden;
+}
+
+#answers label span {
+    text-align:center;
+    font-size: 15px;
+    padding:13px 0px;
+    display:block;
+    color:#00B5EF;
+   
+}
+
+#answers input {
+    position:absolute;
+    top:-400px;
+    
+}
+#answers input:checked + label {
+    background-color:#00B5EF;
+    color:#F7F7F7;
+}
+#answers input:checked + label > span {
+    background-color:#00B5EF;
+    color:#F7F7F7;
+}
+
+
+#submit
+{
+  display:flex;
+  justify-content:center;
+  align-content: center;
+  
+  
+}
+
+.form-submit
+{
+  display:block;
+}
+
+.btn{
+  margin-bottom:20px;
+}
+
+.response-section
+{
+  padding-left:20px;
+}
