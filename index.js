@@ -215,6 +215,13 @@ const QUIZ = [
       console.log('`NextQuestionClicked`');
   
     questionNumber ++;
+    
+    //sets radio buttons to be unselected
+    document.getElementById('answer1').checked = false;
+    document.getElementById('answer2').checked = false;
+    document.getElementById('answer3').checked = false;
+    document.getElementById('answer4').checked = false;
+
     $('.next-question-button').toggleClass("hide");
   
      if (questionNumber == 5)
