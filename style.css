@@ -48,6 +48,18 @@ p{
   transform: scaleX(-1);
  
 }
+
+@media only screen and (max-width: 700px){
+    .hero-img
+  {
+    float: right;
+    width: 60%;
+    transform: scaleX(-1);
+    padding-top:65px;
+  }
+  }
+  
+
 .logo
 {
   width: 33%;
