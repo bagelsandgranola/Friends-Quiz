@@ -10,8 +10,19 @@ p{
 .question-text-container
 {
   display:block;
- // height: 100px;
   width: 460px;
+}
+
+.tryAgain, .results
+{
+  padding-left: 20px;
+  display: flex;
+    justify-content: center;
+    margin: auto;
+    max-width: 400px;
+
+    padding-top:20px;
+    text-align:center;
 }
 
 .yellowButton
@@ -29,6 +40,11 @@ p{
   background-color:rgb(255, 204, 49);
   border-color: rgb(255, 204, 49);
   cursor: pointer;
+}
+
+.hidden
+{
+  display: none !important;
 }
 
 #nextQuestion-button-text
@@ -105,12 +121,11 @@ body{
 /* Questions Page Styling */
 .gif
 {
-  //float: right;
   width: 400px;
   padding-top: 50px;
   padding-left: 50px;
 }
-ax
+
 .image
 {
   display: inline-block;
@@ -152,16 +167,16 @@ h4{
 {
   display:block;
   width: 466px;
-  height: 440px;
+  
 }
 .question-header > img
 {
-  padding-left: 10px;
+  padding-left: 20px;
 }
 
 .question-header > h4
 {
-  padding-left: 10px;
+  padding-left: 20px;
 }
 
 /*
@@ -184,6 +199,8 @@ h4{
     border-radius:12px;
     border:1px solid #00B5EF;
     overflow:hidden;
+    cursor: pointer;
+
 }
 
 #answers label span {

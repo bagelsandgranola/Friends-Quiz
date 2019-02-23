@@ -86,11 +86,14 @@ const QUIZ = [
   /* I want to click Submit and know whether I got it right or wrong */
   function handleAnswerSubmission()
   {
-  
+    showSubmitButton();
     $('#answers').submit(function (event)
     {
       event.preventDefault();
       console.log('`handleAnswerSubmission` ran');
+
+      $('#submit').addClass("hidden");
+
   
       /* Display Answer Image */
       var answerImageURL = getAnswerImage(questionNumber);
@@ -120,6 +123,31 @@ const QUIZ = [
     });
       
   }
+
+  function showSubmitButton ()
+{
+  console.log("show Submit ran.")
+    $('#answer1').on("click", function (event)
+    {
+          $('#submit').removeClass("hidden");
+    });
+
+    $('#answer2').on("click", function (event)
+    {
+          $('#submit').removeClass("hidden");
+    });
+
+    $('#answer3').on("click", function (event)
+    {
+          $('#submit').removeClass("hidden");
+    });
+
+    $('#answer4').on("click", function (event)
+    {
+          $('#submit').removeClass("hidden");
+    });
+
+}
   
   /* Retrieve selection */
   function getSubmittedAnswer ()
@@ -215,6 +243,8 @@ const QUIZ = [
       console.log('`NextQuestionClicked`');
   
     questionNumber ++;
+
+    $('.question-count').html(`<h4 class="question-count"> Question ${questionNumber} of 5 </h4>`)
     
     //sets radio buttons to be unselected
     document.getElementById('answer1').checked = false;
@@ -337,13 +367,14 @@ const QUIZ = [
   
     if (numberCorrect <=4)
     {
-    $('#results').html(`<p> You got ${numberCorrect} out of 5 correct. Maybe you should go watch more friends. </p>`)
+    $('#results').html(`<img class="results" src="https://uglybabe.files.wordpress.com/2016/02/04bd9b4a-5f02-4dfd-8914-f4e2688f8cf7.jpg" alt="friends cast looking dissapointed in window"><p class="results"> You got ${numberCorrect} out of 5 correct. Maybe you should go watch more friends. </p>`)
     }
   
     if (numberCorrect == 5)
-    {
-      $('#results').html(`<p> Nice work! You got ${numberCorrect} out of 5 correct. You really know your stuff. </p>`)
-    }
+  {
+    $('#results').html(`<img class="results" src="http://big.assets.huffingtonpost.com/tumblr_nho7x7yS081rejun1o1_500.gif" alt="picture of friends cast clapping">
+    <p class="results"> Nice work! You got ${numberCorrect} out of 5 correct. You really know your stuff. </p>`)
+  }
   
     $('.tryAgain').toggleClass("hide");
   
@@ -354,6 +385,8 @@ const QUIZ = [
   {
     $('#tryAgain').on("click", event =>
     {
+
+        questionNumber = 1;
         console.log('`handleStartOver` ran');
         $('#question-page').toggleClass("hide");
         $('#results').toggleClass("hide");
@@ -366,6 +399,8 @@ const QUIZ = [
         
         displayQuestion(questionText);
         displayAnswers(questionAnswerArray);
+
+        $('.question-count').html(`<h4 class="question-count"> Question ${questionNumber} of 5 </h4>`)
         
         questionImageURL = getQuestionImage(questionNumber);
   
