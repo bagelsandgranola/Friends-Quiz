@@ -36,7 +36,7 @@ const QUIZ = [
     answer4: "Yellow",
     rightAnswer: "Orange",
     questionImageURL: "https://25.media.tumblr.com/2097acbbdb326249bd0afd202af68f30/tumblr_mspygr1ZqT1qcu8s6o1_500.gif",
-    answerImageURL: "https://media.giphy.com/media/celhADfo8yxMI/giphy.gif""},
+    answerImageURL: "https://media.giphy.com/media/celhADfo8yxMI/giphy.gif"},
   
     {question: "Which characters have never lived together?", 
     answer1: "Ross and Phoebe", 
